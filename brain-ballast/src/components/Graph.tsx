@@ -46,6 +46,13 @@ const Graph: React.FC = () => {
         backgroundColor: "rgba(255,159,64,0.2)",
         tension: 0.4,
       },
+      {
+        label: "Dataset 4",
+        data: [18, 48, 77, 9, 100, 27, 40],
+        borderColor: "rgba(255,159,64,1)",
+        backgroundColor: "rgba(255,159,64,0.2)",
+        tension: 0.4,
+      },
     ],
   };
 
