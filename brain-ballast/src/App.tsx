@@ -1,6 +1,6 @@
 import './App.css'
 import Graph from './components/Graph'
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import HistoryPage from './pages/HistoricalData';
 import LinkButton from './components/LinkButton';
 
