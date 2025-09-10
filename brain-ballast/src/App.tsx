@@ -1,31 +1,16 @@
-import './App.css'
-import Graph from './components/Graph'
-import { Routes, Route} from 'react-router-dom';
-import HistoryPage from './pages/HistoricalData';
-import LinkButton from './components/LinkButton';
-
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import HistoryPage from "./pages/HistoricalData";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
-
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <div>
-              <h1>Brain Ballast Dashboard</h1>
-              <Graph />
-            </div>
-            <div className='flex justify-center'>
-              <LinkButton page='/History' buttonText='History' />
-            </div>
-          </>
-        }
-      />
+        <Route path="/" element={<Dashboard />} />
+      <Route path="/Dashboard" element={<Dashboard />} />
       <Route path="/history" element={<HistoryPage />} />
     </Routes>
   );
 }
 
-export default App
+export default App;
