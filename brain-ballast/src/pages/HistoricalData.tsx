@@ -1,6 +1,5 @@
 import React from "react";
 import LinkButton from "../components/LinkButton";
-import { Analytics } from "@vercel/analytics/next";
 const HistoryPage: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen ">
@@ -8,7 +7,6 @@ const HistoryPage: React.FC = () => {
       <p className="text-lg">Look at all your previous tests!</p>
       <div className="flex justify-center">
         <LinkButton page="/Dashboard" buttonText="Dashboard" />'
-        <Analytics />
       </div>
     </div>
   );
