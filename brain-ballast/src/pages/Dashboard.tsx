@@ -1,7 +1,6 @@
 import React from "react";
 import LinkButton from "../components/LinkButton";
 import Graph from "../components/Graph";
-
 const Dashboard: React.FC = () => {
   return (
     <>
