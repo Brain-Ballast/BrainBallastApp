@@ -1,2 +1,2 @@
 # BrainBallastApp
-React App TODO: explain more
+Brain Ballast Application that shows realtime and historical data.
