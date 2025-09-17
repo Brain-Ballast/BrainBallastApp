@@ -1,7 +1,6 @@
 import React from "react";
 import LinkButton from "../components/LinkButton";
 import Graph from "../components/Graph";
-import { Analytics } from "@vercel/analytics/next";
 const Dashboard: React.FC = () => {
   return (
     <>
@@ -11,7 +10,6 @@ const Dashboard: React.FC = () => {
       </div>
       <div className="flex justify-center">
         <LinkButton page="/history" buttonText="History" />
-        <Analytics />
       </div>
     </>
   );
