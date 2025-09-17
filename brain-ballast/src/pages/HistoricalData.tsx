@@ -1,13 +1,12 @@
 import React from "react";
 import LinkButton from "../components/LinkButton";
+const historicalData = [
+  { id: 1, name: "Test 1", date: "2025-09-01", link: "/details/1" },
+  { id: 2, name: "Test 2", date: "2025-09-10", link: "/details/2" },
+  { id: 3, name: "Test 3", date: "2025-09-15", link: "/details/3" },
+  { id: 4, name: "Test 4", date: "2025-09-20", link: "/details/4" },
+];
 const HistoryPage: React.FC = () => {
-  const historicalData = [
-    { id: 1, name: "Test 1", date: "2025-09-01", link: "/details/1" },
-    { id: 2, name: "Test 2", date: "2025-09-10", link: "/details/2" },
-    { id: 3, name: "Test 3", date: "2025-09-15", link: "/details/3" },
-    { id: 4, name: "Test 4", date: "2025-09-20", link: "/details/4" },
-  ];
-
   return (
     <div className="flex flex-col min-h-screen">
       <h2 className="text-3xl font-bold mb-4">History View</h2>
@@ -16,9 +15,15 @@ const HistoryPage: React.FC = () => {
         <table className="min-w-full border">
           <thead>
             <tr>
-              <th className="px-4 py-2">Name</th>
-              <th className="px-4 py-2">Date</th>
-              <th className="px-4 py-2">Details</th>
+              <th scope="col" className="px-4 py-2">
+                Name
+              </th>
+              <th scope="col" className="px-4 py-2">
+                Date
+              </th>
+              <th scope="col" className="px-4 py-2">
+                Details
+              </th>
             </tr>
           </thead>
           <tbody>
