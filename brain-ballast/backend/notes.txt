@@ -1,0 +1,10 @@
+config-csv file path hardcoded for now
+server.js main backend server file
+routes- api endpoints 
+-status shows file path, rows, cols, and some sample data when called
+-download streams exact csv file for download on front endpoints
+-reload, used to reload file data if file has changed or been updated
+-records returns a sample of 10 rows worth of data
+-series returns formated csv file for graphics on frontend.
+lib-csv for csv reading and caching for now a in-memory cache holds the parsed results... I think we agreed no database so in the final version this would be reading from the output of the py program that outputs a seperate csv file for each run 
+
